@@ -87,17 +87,17 @@ File: dag5_notification_workflow.py
 ## 🐳 How to Run the Project
 
 1. Start Containers  
+```
 docker-compose up -d
-
-2. Initialize Airflow Database  
+```
+2. Initialize Airflow Database
+```
 docker-compose run --rm airflow-init airflow db migrate
-
+```
 3. Access Airflow UI  
-
 URL: http://localhost:8080  
 Username: airflow  
 Password: airflow
-
 ---
 
 ## 🗄 PostgreSQL Access
@@ -105,11 +105,11 @@ Password: airflow
 docker exec -it airflow_postgres psql -U airflow_user -d airflow_db
 
 Useful commands:
-
+```
 \\dt  
 SELECT * FROM raw_employee_data;  
 SELECT * FROM employees_transformed;
-
+```
 ---
 
 ## ✅ Key Features Demonstrated
